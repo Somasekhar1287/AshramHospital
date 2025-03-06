@@ -7435,6 +7435,15 @@ padding-top: 50px;
 }
 
 .formCard{
-  background:gray;
+  background:#f1f1f1;
   padding: 50px;
+}
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=password],
+input[type=url],
+textarea{
+  height: 37.6px;
 }
