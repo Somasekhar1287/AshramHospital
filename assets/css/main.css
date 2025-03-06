@@ -7427,3 +7427,14 @@ textarea {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.form-section{
+padding:150px;
+padding-top: 50px;
+
+}
+
+.formCard{
+  background:gray;
+  padding: 50px;
+}
