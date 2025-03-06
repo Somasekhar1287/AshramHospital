@@ -7433,6 +7433,13 @@ padding:150px;
 padding-top: 50px;
 
 }
+@media screen and (max-width:1024px) {
+  .form-section {
+      padding: 0;
+      padding-top: 50px;
+  
+    }
+}
 
 .formCard{
   background:#f1f1f1;
