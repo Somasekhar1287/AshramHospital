@@ -573,7 +573,7 @@ textarea {
   line-height: 1;
   display: inline-block;
   border-radius: 100px;
-  padding: 18px 28px;
+  padding: 18px 18px;
 }
 .td-btn:hover {
   color: var(--td-common-white);
