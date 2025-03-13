@@ -1131,46 +1131,160 @@
                             placeholder="Enter Pincode"
                           />
                         </div>
-                        <div class="col-md-12 mb-3">
-                          <h4>Accompanying Persons / Children*</h4>
+
+                        <div class="col-md-6">
+                          <label for="ff_5_input_mask_1" aria-label="Pincode"
+                            >Meals Preference</label
+                          >
+                          <ul class="listVal l1">
+                            <li>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input l1"
+                                  data-amt="1000.00"
+                                  type="checkbox"
+                                  name="pre_conference_m"
+                                  id="PCW-1"
+                                  value="PCW-1"
+                                  style="margin-top: 7px"
+                                />
+                                <label class="form-check-label" for="PCW-1"
+                                  >Veg</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input l1"
+                                  data-amt="1000.00"
+                                  type="checkbox"
+                                  name="pre_conference_m"
+                                  id="PCW-1"
+                                  value="PCW-1"
+                                  style="margin-top: 7px"
+                                />
+                                <label class="form-check-label" for="PCW-1"
+                                  >Non-Veg</label
+                                >
+                              </div>
+                            </li>
+                          </ul>
                         </div>
 
-                        <div class="col-md-6" style="margin-top: 10px">
-                          <label
-                            for="accom1"
-                            aria-label="No. of Accompanying Person"
-                            >Accompanying Persons</label
+                        <!-- Accompanying Persons / Children* -->
+
+                        <div class="col-md-12 mb-3">
+                          <div
+                            class="d-flex justify-content-between border-bottom"
                           >
-                          <select
-                            name="accom_person"
-                            id="ff_5_dropdown_3"
-                            class="form-control"
-                            fdprocessedid="gs463s"
-                          >
-                            <option value="">- Select -</option>
-                            <option data-amt="0.00" value="0" selected="">
-                              0
-                            </option>
-                          </select>
+                            <h4>Accompanying Persons*</h4>
+                            <div class="btn text-bold addbtn">Add</div>
+                          </div>
                         </div>
-                        <div class="col-md-6" style="margin-top: 10px">
+                        <div class="col-md-4">
+                          <label for="ff_5_input_mask_1" aria-label="Pincode"
+                            >Full Name</label
+                          ><input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            data-name="input_mask_1"
+                            id="name"
+                            required=""
+                            fdprocessedid="c1k9gj"
+                            placeholder="Enter Full Name"
+                          />
+                        </div>
+                        <div class="col-md-4">
+                          <label for="ff_5_input_mask_1" aria-label="Pincode"
+                            >Age</label
+                          ><input
+                            type="text"
+                            name="age"
+                            class="form-control"
+                            data-name="input_mask_1"
+                            id="age"
+                            required=""
+                            fdprocessedid="c1k9gj"
+                            placeholder="Enter Age"
+                          />
+                        </div>
+
+                        <div class="col-md-4" style="margin-top: 10px">
                           <label
                             for="accom2"
                             aria-label="No. of Accompanying Children"
-                            >Accompanying Children</label
+                            >Gender</label
                           >
                           <select
-                            name="accom_children"
+                            name="gender"
                             id="ff_5_dropdown_7"
                             class="form-control"
                             fdprocessedid="ji5pun"
                           >
-                            <option value="">- Select -</option>
-                            <option data-amt="0.00" value="0" selected="">
-                              0
+                            <option value="" selected="">- Select -</option>
+                            <option data-amt="0.00" value="0">Male</option>
+                            <option data-amt="0.00" value="0">Female</option>
+                          </select>
+                        </div>
+
+                        <!-- Registration Fees details  -->
+                        <div class="col-md-12 mt-10">
+                          <h4>Registration Fee</h4>
+                        </div>
+
+                        <div class="col-md-4" style="margin-top: 10px">
+                          <label for="category">Category</label>
+                          <select
+                            name="category"
+                            id="category"
+                            class="form-control"
+                            onchange="updateAmounts()"
+                          >
+                            <option value="" selected>- Select -</option>
+                            <option value="member">Member</option>
+                            <option value="non-member">Non - Member</option>
+                            <option value="post-graduate">Post Graduate</option>
+                            <option value="accompanying-person">
+                              Accompanying Person
                             </option>
                           </select>
                         </div>
+
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="preLaunch"
+                              >Pre-Launch Conference Registration
+                              (Amount)</label
+                            >
+                            <input
+                              type="text"
+                              name="preLaunch"
+                              id="preLaunch"
+                              placeholder="Amount"
+                              class="form-control"
+                              value=""
+                              readonly
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="earlyBird">Early Bird (Amount)</label>
+                            <input
+                              type="text"
+                              name="earlyBird"
+                              id="earlyBird"
+                              placeholder="Amount"
+                              class="form-control"
+                              value=""
+                              readonly
+                            />
+                          </div>
+                        </div>
+
                         <div class="col-md-12" style="margin-top: 20px">
                           <h3 class="mb-3 text-center">
                             NCHPE 2024 Pre-Conference Workshops: A Feast of
@@ -2246,6 +2360,41 @@
     <!-- footer-area-end -->
 
     <!-- JS here -->
+    <script>
+      function updateAmounts() {
+        const category = document.getElementById("category").value;
+        const preLaunchInput = document.getElementById("preLaunch");
+        const earlyBirdInput = document.getElementById("earlyBird");
+
+        let preLaunchAmount = "";
+        let earlyBirdAmount = "";
+
+        switch (category) {
+          case "member":
+            preLaunchAmount = "6000";
+            earlyBirdAmount = "7500";
+            break;
+          case "non-member":
+            preLaunchAmount = "7000";
+            earlyBirdAmount = "8500";
+            break;
+          case "post-graduate":
+            preLaunchAmount = "5000";
+            earlyBirdAmount = "5500";
+            break;
+          case "accompanying-person":
+            preLaunchAmount = "5000";
+            earlyBirdAmount = "5500";
+            break;
+          default:
+            preLaunchAmount = "";
+            earlyBirdAmount = "";
+        }
+
+        preLaunchInput.value = preLaunchAmount;
+        earlyBirdInput.value = earlyBirdAmount;
+      }
+    </script>
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
@@ -2261,5 +2410,4 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
-
 </html>

@@ -8963,3 +8963,9 @@ textarea {
 .ff-el-input--content {
   margin-bottom: 10px;
 }
+
+.addbtn {
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-weight: bold;
+}
