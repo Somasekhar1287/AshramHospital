@@ -8969,3 +8969,7 @@ textarea {
   border-radius: 8px;
   font-weight: bold;
 }
+
+.atomicity:hover {
+  color: #ffffff;
+}
