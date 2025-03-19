@@ -6195,7 +6195,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 ===============================*/
 .td-map-inner {
   line-height: 1;
-  background: var(--td-common-yellow);
+  background: #efefef;
 }
 
 .td-map-inner iframe {
@@ -8972,5 +8972,32 @@ textarea {
 @media screen and (max-width:768px) {
   .tdmenu__wrap .logo {
     margin-left: 2px;
+  }
+}
+
+
+.locationLI li {
+  font-size: 24px;
+  padding: 20px;
+  line-height: 38px;
+  font-weight: 600;
+  list-style: square;
+}
+
+.locationLI {
+  padding: 20px;
+}
+
+@media screen and (max-width:768px) {
+  .locationLI li {
+    font-size: 18px;
+    padding: 8px;
+    line-height: normal;
+    font-weight: 600;
+    list-style: square;
+  }
+
+  .locationLI {
+    padding: 10px;
   }
 }
