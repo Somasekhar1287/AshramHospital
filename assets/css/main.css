@@ -3439,7 +3439,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .tdmenu__navbar-wrap>ul>li.active>a,
 .tdmenu__navbar-wrap>ul>li:hover>a {
-  color: #ffd51c !important;
+  color: #f248b4 !important;
 }
 
 .tdmenu__main-menu li.menu-item-has-children .dropdown-btn {
@@ -8963,4 +8963,14 @@ textarea {
 
 .atomicity:hover {
   color: #ffffff;
+}
+
+.tdmenu__wrap .logo {
+  margin-left: 25px;
+}
+
+@media screen and (max-width:768px) {
+  .tdmenu__wrap .logo {
+    margin-left: 2px;
+  }
 }
