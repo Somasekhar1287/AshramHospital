@@ -4415,9 +4415,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .td-team-content {
-  padding-top: 37px;
+  /* padding-top: 37px;
   padding-left: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 10px; */
+  padding: 20px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
