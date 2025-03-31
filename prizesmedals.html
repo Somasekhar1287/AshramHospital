@@ -28,6 +28,29 @@
     <link rel="stylesheet" href="assets/css/default.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
+      .theme {
+        font-weight: bold;
+        color: red;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: #f8f9fa;
+        color: red;
+      }
+      .highlight {
+        font-weight: bold;
+      }
+
       .section {
         margin-bottom: 20px;
       }
@@ -490,25 +513,40 @@
         </div>
       </div>
       <!-- td-breadcrumb-area-end -->
-
       <div class="container pt-100 pb-100">
-        <h2>PRIZES AND MEDALS : CATEGORIES</h2>
-        <ol>
-          <li><b>CS Murthy Memorial Medal:</b> Best Faculty Research Paper.</li>
-          <li>
-            <b>Dr B Naganna Memorial Medal:</b> Best Faculty Research Poster.
-          </li>
-          <li><b>Dr V Suneeta Memorial Medal:</b> Best PG Research Paper.</li>
-          <li>
-            <b>Perala Lakshmana Rao Memorial Medal:</b> Best PG Research Poster.
-          </li>
-          <li><b>C Janaki Memorial Medal:</b> Best Student Research Paper.</li>
-          <li><b>BS Rao Memorial Medal:</b> Best Student Research Poster.</li>
-          <li>
-            <b>Dr. I. Sakuntala Devi Memorial Medal:</b> For the best innovation
-            in medical education.
-          </li>
-        </ol>
+        <h2 class="text-center p-3 ">CATEGORIES FOR AWARD PRESENTATION</h2>
+        <p><span class="theme">THEME:</span> Medical Education</p>
+        <table>
+          <tr>
+            <th>Oral Presentation</th>
+            <th>Medal in Memory of</th>
+            <th>E-Poster Presentation</th>
+            <th>Medal in Memory of</th>
+          </tr>
+          <tr>
+            <td>Undergraduate</td>
+            <td class="highlight">C Janaki Memorial Medal</td>
+            <td>Undergraduate</td>
+            <td class="highlight">BS Rao Memorial Medal</td>
+          </tr>
+          <tr>
+            <td>Postgraduate</td>
+            <td class="highlight">Dr V Suneeta Memorial Medal</td>
+            <td>Postgraduate</td>
+            <td class="highlight">Perala Lakshman Rao Memorial Medal</td>
+          </tr>
+          <tr>
+            <td>Faculty</td>
+            <td class="highlight">CS Murthy Memorial Medal</td>
+            <td>Faculty</td>
+            <td class="highlight">Dr B Naganna Memorial Medal</td>
+          </tr>
+        </table>
+        <p>
+          <strong>Dr. I. Sakuntala Devi Memorial Medal:</strong> For the best
+          Innovations in Medical Education<br />(Only for Oral presentation by
+          Faculty).
+        </p>
       </div>
     </main>
     <!-- main-area-end -->
