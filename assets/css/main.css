@@ -9184,3 +9184,7 @@ textarea {
     display: none;
   }
 }
+
+.sighttext {
+  color: blue;
+}
