@@ -9021,9 +9021,19 @@ textarea {
   justify-content: space-between;
 }
 
-.logos img {
+/* .logos img {
   width: 200px;
   object-fit: contain;
+} */
+.logos .asramlogo {
+  width: 200px;
+  object-fit: contain;
+}
+
+.logos .yearslogo {
+  width: 110px;
+  object-fit: contain;
+  margin-right: 25px;
 }
 
 
