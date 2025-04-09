@@ -44,6 +44,32 @@
         font-weight: 600;
         color: #333;
       }
+      .committeecardROw {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .mBV-center {
+        min-height: 200px;
+        max-height: 542px;
+        height: 537px;
+      }
+      @media screen and (max-width: 769px) {
+        .committeecardROw {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .mBV-center {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+        }
+        .apmedicon {
+          font-size: 24px;
+        }
+      }
     </style>
   </head>
 
@@ -360,13 +386,13 @@
       </div>
 
       <div class="container my-5">
-        <h1 class="text-center mb-4">APMEDUCON 2025 Committees</h1>
+        <h1 class="text-center mb-4 apmedicon">APMEDUCON 2025 Committees</h1>
 
         <!-- Patrons -->
         <div class="card committee-card">
           <div class="card-header">Patrons</div>
           <div class="card-body">
-            <ul class="d-flex flex-row g-5 gap5 justify-content-between">
+            <ul class="committeecardROw g-5 gap5">
               <li>
                 <img
                   src="./assets/img/doctorimages/COMMITTEE MEMBERS/G. Ganagaraju.png"
@@ -408,7 +434,7 @@
         <div class="card committee-card">
           <div class="card-header">Advisory Committee</div>
           <div class="card-body">
-            <ul class="d-flex flex-row g-5 gap5 justify-content-between">
+            <ul class="committeecardROw g-5 gap5">
               <li>
                 <img
                   src="./assets/img/doctorimages/COMMITTEE MEMBERS/Rathi Devi.png"
@@ -451,7 +477,7 @@
         <div class="card committee-card">
           <div class="card-header">Organizing Committee</div>
           <div class="card-body">
-            <ul class="d-flex flex-lg-row g-5 gap5 justify-content-between">
+            <ul class="committeecardROw g-5 gap5">
               <li class="">
                 <img
                   src="./assets/img/doctorimages/COMMITTEE MEMBERS/srinivas pricipal.png"
@@ -505,7 +531,7 @@
             <!-- Scientific Committee -->
             <div class="card committee-card">
               <div class="card-header">Scientific Committee</div>
-              <div class="card-body">
+              <div class="card-body mBV-center">
                 <ul>
                   <li>
                     <img
@@ -528,7 +554,7 @@
               <div class="card-header">
                 Accommodation & Transportation Committee
               </div>
-              <div class="card-body">
+              <div class="card-body mBV-center">
                 <ul>
                   <li>
                     <img
@@ -551,7 +577,7 @@
             <!-- Academic Committee -->
             <div class="card committee-card">
               <div class="card-header">Academic Committee</div>
-              <div class="card-body">
+              <div class="card-body mBV-center">
                 <ul>
                   <li>
                     <img
@@ -575,7 +601,7 @@
             <!-- Food Committee -->
             <div class="card committee-card">
               <div class="card-header">Food Committee</div>
-              <div class="card-body">
+              <div class="card-body mBV-center">
                 <ul>
                   <li>
                     <img
@@ -599,7 +625,7 @@
             <!-- Cultural Committee -->
             <div class="card committee-card">
               <div class="card-header">Cultural Committee</div>
-              <div class="card-body">
+              <div class="card-body mBV-center">
                 <ul>
                   <li>
                     <img
@@ -621,7 +647,7 @@
             <!-- IT Committee -->
             <div class="card committee-card">
               <div class="card-header">IT Committee</div>
-              <div class="card-body">
+              <div class="card-body mBV-center">
                 <ul>
                   <li>
                     <img
