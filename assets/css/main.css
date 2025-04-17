@@ -3747,27 +3747,27 @@ only screen and (min-width: 576px) and (max-width: 767px),
   bottom: 28px;
 }
 
-.td-menu-right-action-2 .td-header-cart .cart-button {
+.td-menu-right-action innerPagesNav -2 .td-header-cart .cart-button {
   color: var(--td-common-black);
 }
 
-.td-menu-right-action-2 .search-button {
+.td-menu-right-action innerPagesNav -2 .search-button {
   color: var(--td-common-black);
 }
 
-.td-menu-right-action-2 .td-header-cart-count {
+.td-menu-right-action innerPagesNav -2 .td-header-cart-count {
   background: var(--td-common-black);
 }
 
-.td-menu-right-action-2 .tdmenu-offcanvas-open-btn span {
+.td-menu-right-action innerPagesNav -2 .tdmenu-offcanvas-open-btn span {
   background-color: var(--td-common-black);
 }
 
-.td-menu-right-action-3 .td-btn {
+.td-menu-right-action innerPagesNav -3 .td-btn {
   padding: 15px 26px;
 }
 
-.td-menu-right-action-3 .td-header-cart-count {
+.td-menu-right-action innerPagesNav -3 .td-header-cart-count {
   background: var(--td-common-white);
   color: var(--td-common-black);
 }
@@ -3832,7 +3832,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   background: var(--td-common-black);
 }
 
-.header-sticky .td-menu-right-action-3 .td-header-cart-count {
+.header-sticky .td-menu-right-action innerPagesNav -3 .td-header-cart-count {
   background: var(--td-theme-primary);
   color: var(--td-common-white);
 }
@@ -9228,5 +9228,11 @@ textarea {
 @media screen and (min-width:768px) {
   .d-md-none {
     display: none;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .innerPagesNav {
+    flex-direction: row-reverse;
   }
 }
