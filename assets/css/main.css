@@ -9235,4 +9235,9 @@ textarea {
   .innerPagesNav {
     flex-direction: row-reverse;
   }
+
+  .committeecardROw li {
+    margin-bottom: 32px;
+    margin-top: 6px;
+  }
 }
