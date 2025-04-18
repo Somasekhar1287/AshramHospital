@@ -9240,4 +9240,8 @@ textarea {
     margin-bottom: 32px;
     margin-top: 6px;
   }
+
+  .topic-col {
+    width: 100%;
+  }
 }
